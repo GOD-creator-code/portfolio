@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    background: #87CEEB; /* Sky Blue */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #87CEEB;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #87CEEB;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: auto;
+    color: #000;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, #87ceeb, #ffffff);
+    padding: 40px;
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-section textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-section button {
+    padding: 12px;
+    border: none;
+    background: #b3e5fc;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-section button:hover {
+    background: #81d4fa;
+}
+
+/* Contact Image */
+.contact-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-section,
+    .contact-image {
+        width: 100%;
+    }
+
+    .contact-image {
+        margin-top: 20px;
+    }
+}

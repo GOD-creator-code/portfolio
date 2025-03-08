@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+
+/* Body and Overall Design */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #87CEEB, #ffffff); /* Sky Blue and White Gradient */
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+header nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+/* Section Style */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 100px; /* Added space for header */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex-direction: column;
+    height: 500px; /* Increased size */
+    text-align: center;
+    width: 100%;
+}
+
+#home .text-box {
+    margin-bottom: 20px;
+}
+
+#home .image-container {
+    margin-top: 30px;
+}
+
+#home .image-container img {
+    width: 150px;  /* Slightly bigger */
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Resume Section */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.resume-container .left-section,
+.resume-container .right-section {
+    width: 45%;
+}
+
+.resume-container .left-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    background-color: #4CAF50;
+    height: 100%;
+}
+
+/* Service Box */
+.service-box {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.service-box:hover {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;  /* Adjust height */
+    padding: 20px;
+  
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #333;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #444;
+}
+
+body.dark-mode header nav a {
+    color: white;
+}
+
+body.dark-mode footer {
+    background-color: #444;
+}
